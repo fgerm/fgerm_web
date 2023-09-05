@@ -27,7 +27,7 @@ const Header = () => {
       base:"1rem 2rem",
       sm: "1rem 2rem", 
       md:"1rem 2rem", 
-      lg:"1rem 2rem"
+      lg:"1rem rem"
     }}
 
     > 
