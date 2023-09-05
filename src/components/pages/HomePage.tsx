@@ -8,9 +8,23 @@ const HomePage = () => {
 
   return (
   <Stack  > 
+
   <Flex 
-    h="100vh"
+    h={ 
+      {
+        base:"100vh",
+        sm:"80vh", 
+        md:" 70vh", 
+        lg:"100vh"
+      }
+    }
     //////////////////////////////////////////// bg="pink"
+    direction={{
+      base:"column-reverse", 
+      sm:"column-reverse",
+      md:"row",
+      lg:"row"
+    }}
     justifyContent="center"
     alignItems="center"
     
@@ -25,14 +39,51 @@ const HomePage = () => {
       </CardBody>
 
     </Card> */}
-      <Box  w="50%"  noOfLines={3} bg="">
-      <Heading as='h1' size="4xl" lineHeight="" color="#47a9cc">Precision Genome Engineering</Heading>  
-      <Text w="60ch" noOfLines={3}> Welcome to a world where scientific rigor meets compassionate commitment,
-where each discovery is a step forward in understanding the intricacies of life</Text>
-      </Box>
+      <Box 
+      outline="2px solid red"
+      w={{
+        base:"50%",
+        sm:"80%",
+        md:"48%", 
+        lg:"50%"
+      }} 
+      margin={{ 
+        base: "1rem", 
+        sm:"1rem", 
+        md:"inherit",
+        lg:"inherit"
+      }}
+
+      noOfLines={3} bg="">
+      <Heading as='h1' 
+      size={ {
+        base:"2xl",
+        sm:"3xl",
+        md:"2xl", 
+        lg:"4xl" 
+      }}
+
+
+      color="#47a9cc">Precision Genome Engineering</Heading>  
+      <Text w={{
+
+      }} 
+      noOfLines={3}
+      > Welcome to a world where scientific rigor meets compassionate commitment,
+      where each discovery is a step forward in understanding the intricacies of life</Text>
+      </Box>      
     
   
-      <Box w="25%" aspectRatio="1/1" bg="blue"
+      <Box
+      
+      outline="2px solid green"
+      w={{
+        base:"60%",
+        sm:"50%",
+        md:"30%",
+        lg:"30%"
+      }} 
+      aspectRatio="1/1" bg="blue"
       borderRadius="50%"
       // background="url(https://pixabay.com/photos/biology-research-laboratory-science-220005/)"
       ></Box>

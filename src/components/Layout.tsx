@@ -7,7 +7,7 @@ const Layout = () => {
   return (
    <>
 
-  <Header /> 
+  <Header  /> 
 
   <Box w="100%" h="500px"> 
   <HomePage /> 

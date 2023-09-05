@@ -1,6 +1,16 @@
-import React from 'react'
+import {useState} from 'react'
+
+interface Props{ 
+  visibility: boolean
+}
+
+
+
 import { Flex, Text, useBreakpointValue, Stack, HStack, Button, Slide} from '@chakra-ui/react'
-const NavBar = () => {
+const NavBar = ({visibility}: Props) => {
+  
+  
+
 
   const breakPoint = useBreakpointValue( { 
     base: "small", 
@@ -17,11 +27,18 @@ const NavBar = () => {
     
    <Flex 
     alignItems="left"
-  
     background="hsl(195 57% 54% /0.1)"
     backdropFilter="blur(0.2rem)" 
 
-    
+    transform= {{
+      base: visibility ? "translateX(0%)" :  "translateX(100%)" , 
+      sm: visibility ? "translateX(0%)" :  "translateX(100%)", 
+      md: "inherit",
+      lg:"inherit"
+    }}
+
+
+    transition=  "transform 350ms ease-out"
 
     position={{
       base:"fixed", 
@@ -46,13 +63,13 @@ const NavBar = () => {
       lg:"inherit"
 
     }}
-    gap={4}  
+    gap={5}  
     >
 
     
 
 
-   <Flex
+  <Flex
 
   direction={{
   base:"column", 
@@ -63,7 +80,7 @@ const NavBar = () => {
 
   
   
-   outline="2px solid red"
+  //  outline="2px solid red"
    alignItems={{
     base:"left",
     sm:"left",
@@ -77,11 +94,17 @@ const NavBar = () => {
   padding= {{
     base:"min(10vh, 10rem)  2rem",
     sm:"min(10vh, 10rem)  2rem",
-    md:"inherit", 
-    lg:"inherit"
+    md: "1rem  2rem",
+    lg: "1rem  2rem"
   }}
 
-   gap={2}
+   gap={ {
+    base: 2, 
+    sm: 2, 
+    md: 8, 
+    lg: 9,
+
+   }}
 
    fontWeight="600"
    fontSize={ {
