@@ -19,7 +19,7 @@ const Header = () => {
     
     w="100%"
     // boxShadow="2px 3px 10px rgba(0, 0, 0, 0.5)"
-
+    
     alignItems="center"
     justifyContent="space-between"
     zIndex="200"

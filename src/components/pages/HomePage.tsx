@@ -7,78 +7,114 @@ const HomePage = () => {
 
 
   return (
-  <Stack  > 
+    //////// HomePage
+  <VStack  
+    outline="2px solid green"
+    
+    position="relative"
+    
+    
+
+    padding={{
+    base:  "6rem 1.5rem", 
+    sm: "6rem 1.5rem", 
+    md: "6rem 1rem" , 
+    lg: "6rem 3rem", 
+    xl:"6rem 8rem"
+    }}>  
+
 
   <Flex 
-    h={ 
-      {
-        base:"auto",
-        sm:"auto", 
-        md:" 70vh", 
-        lg:"100vh"
-      }
-    }
-    //////////////////////////////////////////// bg="pink"
-    direction={{
-      base:"column-reverse", 
-      sm:"column-reverse",
-      md:"row",
-      lg:"row"
+
+  
+    h={{
+      base:"inherit", 
+
     }}
-    justifyContent="center"
+    w="100%"
+    //////////////////////////////////////////// bg="pink"
+    //  flexWrap="wrap"
+
+     direction= { {
+      base:"column-reverse", 
+      sm: "column-reverse", 
+      md:"column-reverse", 
+      lg:"row", 
+      xl:"row"
+     }}
+    
+    
+    
+    // direction={{
+    //   base:"column-reverse", 
+    //   sm:"column-reverse",
+    //   md:"row-reverse",
+    //   lg:"row"
+    // }}
+
+    justifyContent={{
+      base:"center",  
+      sm: "center", 
+      md:"center", 
+      lg:"space-around"
+
+    }}
     alignItems="center"
     > 
+  
+  {/**************************************************************  intro Text */}
     <Box 
-      outline="2px solid red"
-      w={{
-        base:"90%",
-        sm:"80%",
-        md:"48%", 
-        lg:"50%"
-      }} 
-      margin={{ 
-        base: "1rem", 
-        sm:"1rem", 
-        md:"inherit",
-        lg:"inherit"
-      }}
+    marginTop={{
+      base:"1.5rem", 
+      lg:"inherit"
 
-      noOfLines={3} >
+    }}
+
+      w={{
+        base:"100%",
+        sm:"80%",
+        md:"80%", 
+        lg:"50%",
+        xl: "50%"
+      }} 
+   
+    >
       <Heading as='h1' 
       size={ {
         base:"3xl",
-        sm:"3xl",
-        md:"2xl", 
-        lg:"4xl" 
+        sm:"4xl",
+        md:"3xl", 
+        lg:"4xl", 
+        xl:"4xl" 
       }}
-
 
       color="#47a9cc">Precision Genome Engineering</Heading>  
       <Text 
-      
       marginTop="1.5rem"
-      w={{
-        base:"50ch",
-        sm: "60ch",
-        md:"60ch",
-        lg:"45ch"
-      }} 
-      noOfLines={3}
-      > Welcome to a world where scientific rigor meets compassionate commitment,
+    
+      // w={{
+      //   base:"100%",
+      //   sm: "50ch",
+      //   md:"60ch",
+      //   lg:"45ch"
+      // }} 
+      > 
+      Welcome to a world where scientific rigor meets compassionate commitment,
       where each discovery is a step forward in understanding the intricacies of life</Text>
       <Button>more</Button>
       </Box>      
     
       <Box
-      
+     
       outline="2px solid green"
       w={{
-        base:"60%",
-        sm:"50%",
-        md:"30%",
-        lg:"30%"
+        base:"20rem",
+        sm:"25rem",
+        md:"30rem",
+        lg:"35rem"
       }} 
-      aspectRatio="1/1" bg="blue"
+      aspectRatio="1/1" 
+      bg="green.200"
       borderRadius="50%"
       // background="url(https://pixabay.com/photos/biology-research-laboratory-science-220005/)"
       ></Box>
@@ -92,9 +128,11 @@ const HomePage = () => {
     
     
     <Flex
-    outline="2px solid green"
+   
+   
     position="relative"
 
+    
     direction={ {
       base:"column-reverse",
       sm:"column-reverse",
@@ -105,36 +143,53 @@ const HomePage = () => {
     alignItems="center"
     justifyContent="center"
 
+
     padding={{
       base:"5rem 0.5rem",
       sm:"5rem 0.5rem",
-      md: "5rem 5rem",
-      lg:"5rem 10rem"
+      md: "3rem 1rem",
+      lg:"3rem 2rem"
     }}
+
     >
-    <VStack w={{
-      base:"50%",
-      sm:"80%", 
-      md: "50%",
-      lg:"50%"
-    }}  gap="10"> 
+
+    <VStack 
+    marginTop={{
+      base:"2.5rem", 
+      sm:"2.5rem",
+      md:"2.5rem", 
+      lg:"inherit "
+    }}
+   
+
+    
+    
+    gap="10"> 
+
+    {/* List of Text Boxes  */}
     <Box> 
         <Heading size="lg" color="#47a9cc"> Heading 1</Heading>
-        <Text w="50ch">Welcome to a world where scientific 
+        <Text w={{
+          base:"100%", 
+          sm:"100%", 
+          md:"50%",
+          lg:"50%"
+        }}
+        >Welcome to a world where scientific 
         rigor meets compassionate commitment,
         where each discovery is a step forward in 
         understanding the intricacies of life </Text>
       </Box>
       <Box> 
         <Heading size="lg" color="#47a9cc"> Heading 2</Heading>
-        <Text w="50ch">Welcome to a world where scientific 
+        <Text w="50%">Welcome to a world where scientific 
         rigor meets compassionate commitment,
         where each discovery is a step forward in 
         understanding the intricacies of life </Text>
       </Box>
       <Box> 
         <Heading size="lg" color="#47a9cc"> Heading 3</Heading>
-        <Text w="50ch">Welcome to a world where scientific 
+        <Text w="50%">Welcome to a world where scientific 
         rigor meets compassionate commitment,
         where each discovery is a step forward in 
         understanding the intricacies of life </Text>
@@ -142,15 +197,17 @@ const HomePage = () => {
     </VStack>
     
     <Heading
-
+    
     size={{
       base:"2xl",
       sm:"3xl", 
       md:"2xl",
       lg:"4xl"
-    }} 
-    outline="2px solid red"
+    }}
+
+   
     lineHeight="1.3"
+    
     alignSelf="flex-start"
     w={{
       base:"100%",
@@ -161,7 +218,6 @@ const HomePage = () => {
     textAlign="right"
     color="#47a9cc"
     
-
     > 
     Unraveling <br/> The Complexities <br/>
     Of Human Infertility
@@ -174,14 +230,11 @@ const HomePage = () => {
 
 
 
-    <Stack h="100vh" bg="pink"> 
-
-    </Stack>
 
 
 
-  </Stack>
+  </VStack>
   )
 }
 
-export default HomePage
+export default HomePage;

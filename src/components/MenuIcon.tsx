@@ -17,6 +17,7 @@ const MenuIcon = ({visibility, onClick}: Props) => {
       md:"none",
       lg:"none"
     }}
+    
     boxSize={9}  
     as={visibility ? IoCloseOutline : BiMenuAltRight} 
     onClick={onClick} 

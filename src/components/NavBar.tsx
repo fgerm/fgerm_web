@@ -5,12 +5,13 @@ interface Props{
 }
 
 
+import { Flex, Text, useBreakpointValue, Link as ChakraLink,Stack, HStack, Button, Slide} from '@chakra-ui/react'
+import { Link as ReactRouterLink, useLocation} from "react-router-dom"; 
 
-import { Flex, Text, useBreakpointValue, Stack, HStack, Button, Slide} from '@chakra-ui/react'
+
+
 const NavBar = ({visibility}: Props) => {
   
-  
-
 
   const breakPoint = useBreakpointValue( { 
     base: "small", 
@@ -66,9 +67,6 @@ const NavBar = ({visibility}: Props) => {
     gap={5}  
     >
 
-    
-
-
   <Flex
 
   direction={{
@@ -114,13 +112,19 @@ const NavBar = ({visibility}: Props) => {
     lg:"1rem"
   }}
    > 
-    <Text> Home</Text>
-    <Text > About</Text>
+    <ChakraLink as={ReactRouterLink}  to="/">  <Text> Home</Text> </ChakraLink >
+    <ChakraLink as={ReactRouterLink}  to="/about">  <Text> About</Text> </ChakraLink >
+    
+    
+    <ChakraLink as={ReactRouterLink}  to="/contact">
     <Button 
     w="auto"
     borderRadius="25px"
     colorScheme="cyan" color="white"> Contact
     </Button>
+    </ChakraLink >
+
+    
    </Flex>
       
     
