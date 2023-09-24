@@ -4,7 +4,9 @@ import React from 'react'
 const Logo = () => {
   return (
     <Box >
-        <Text fontSize="2rem" fontWeight="bold" color="#47a9cc">FGERM </Text>
+    
+        <Text fontSize="2rem" fontWeight="bold" color="#47a9cc">  FGERM </Text>
+    
     </Box>
   )
 }

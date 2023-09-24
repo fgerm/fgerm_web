@@ -1,4 +1,5 @@
-import { Stack,Flex, Box, Button, Slide,  Card, CardHeader, CardBody,Text,Heading, CardFooter, useDisclosure, Fade, VStack } from '@chakra-ui/react'
+import { Flex, Box, Button, Image, Text,Heading, ChakraProvider, CardFooter, useDisclosure, Fade, VStack } from '@chakra-ui/react'
+import mainImage from "../../assets/images/homePage_main.webp"; 
 import React from 'react'
 
 const HomePage = () => {
@@ -114,10 +115,17 @@ const HomePage = () => {
         lg:"35rem"
       }} 
       aspectRatio="1/1" 
-      bg="green.200"
+      
       borderRadius="50%"
+      overflow="hidden"
       // background="url(https://pixabay.com/photos/biology-research-laboratory-science-220005/)"
-      ></Box>
+      >
+
+      <Image 
+      h="100%" 
+      
+      src={mainImage} />
+      </Box>
   
     </Flex>
     
@@ -141,7 +149,7 @@ const HomePage = () => {
     }}
 
     alignItems="center"
-    justifyContent="center"
+    justifyContent="space-around"
 
 
     padding={{
