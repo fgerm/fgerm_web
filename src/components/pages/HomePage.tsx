@@ -61,7 +61,12 @@ const contentData= [
     }}
     
     
-  
+  gap={{
+    base: 10,   
+    lg:"inherit"
+
+
+  }}
     justifyContent={{
       base:"center",  
       sm: "center", 
@@ -94,11 +99,11 @@ const contentData= [
 
 
       fontSize={{
-        base:"2rem",
+        base:"2.5rem",
         sm:"3rem",
         md:"4rem", 
         lg:"4rem", 
-        xl:"5rem"
+        xl:"6rem"
 
       }}
 
@@ -116,12 +121,13 @@ const contentData= [
     
       <Box
      
-      
+      position="relative"
+      right="5%" 
       aspectRatio="1/1" 
       w={{
         base:"25rem", 
         md:"30rem", 
-        lg:"50rem"}}
+        lg:"55rem"}}
       borderRadius="50%"
       overflow="hidden"
       // background="url(https://pixabay.com/photos/biology-research-laboratory-science-220005/)"
