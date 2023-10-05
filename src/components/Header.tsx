@@ -1,4 +1,4 @@
-import { HStack,Show } from '@chakra-ui/react'
+import { HStack } from '@chakra-ui/react'
 import {useState} from 'react'
 import NavBar from './NavBar';
 import Logo from './Logo';
@@ -18,7 +18,7 @@ const Header = () => {
     position="fixed"
     
     w="100%"
-    // boxShadow="2px 3px 10px rgba(0, 0, 0, 0.5)"
+    
     
     alignItems="center"
     justifyContent="space-between"
@@ -27,7 +27,7 @@ const Header = () => {
       base:"1rem 2rem",
       sm: "1rem 2rem", 
       md:"1rem 2rem", 
-      lg:"1rem rem"
+      lg:"1rem 10rem"
     }}
 
     > 

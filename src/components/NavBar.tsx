@@ -1,35 +1,41 @@
-import {useState} from 'react'
+
 
 interface Props{ 
   visibility: boolean
 }
 
 
-import { Flex, Text, useBreakpointValue, Link as ChakraLink,Stack, HStack, Button, Slide} from '@chakra-ui/react'
+import { Flex, Text, Link as ChakraLink,Box} from '@chakra-ui/react'
 import { Link as ReactRouterLink, useLocation} from "react-router-dom"; 
 
 
 
 const NavBar = ({visibility}: Props) => {
-  
+  const navRoutes = [ 
+    {id:1, name:"Home", to:"/"},
+    {id:2, name:"About", to:"/about"},
+    {id:3, name:"Contact", to:"/contact"},
+    ]
 
-  const breakPoint = useBreakpointValue( { 
-    base: "small", 
-    sm : "medium",
-    md: "large",
-    lg: "veryLarge",
-  
-  })
+    const location = useLocation();
 
-
-  console.log(breakPoint); 
-
+    console.log(location)
   return (
-    
+       
    <Flex 
+
     alignItems="left"
-    background="hsl(195 57% 54% /0.1)"
-    backdropFilter="blur(0.2rem)" 
+    background= {{
+      base:"hsl(195 57% 54% /0.5)",
+
+      md:"hsl(195 57% 54% /0.1)"
+
+    }}
+    
+
+    borderRadius="25px"
+
+    backdropFilter="blur(0.4rem)" 
 
     transform= {{
       base: visibility ? "translateX(0%)" :  "translateX(100%)" , 
@@ -90,14 +96,14 @@ const NavBar = ({visibility}: Props) => {
 
 
   padding= {{
-    base:"min(10vh, 10rem)  2rem",
-    sm:"min(10vh, 10rem)  2rem",
-    md: "1rem  2rem",
-    lg: "1rem  2rem"
+    base:"min(10vh, 10rem)  3rem",
+    sm:"min(10vh, 10rem)  3rem",
+    md: "1.5rem  2.5rem",
+    lg: "1.5rem  2.5rem"
   }}
 
    gap={ {
-    base: 2, 
+    base: 6, 
     sm: 2, 
     md: 8, 
     lg: 9,
@@ -112,17 +118,33 @@ const NavBar = ({visibility}: Props) => {
     lg:"1rem"
   }}
    > 
-    <ChakraLink as={ReactRouterLink}  to="/">  <Text> Home</Text> </ChakraLink >
-    <ChakraLink as={ReactRouterLink}  to="/about">  <Text> About</Text> </ChakraLink >
-    
-    
-    <ChakraLink as={ReactRouterLink}  to="/contact">
-    <Button 
-    w="auto"
-    borderRadius="25px"
-    colorScheme="cyan" color="white"> Contact
-    </Button>
-    </ChakraLink >
+
+  { 
+  navRoutes.map( route => (
+   <ChakraLink  as={ReactRouterLink}  
+   key={route.id} 
+   to={route.to}
+
+   _hover={{ textDecoration: "none" }}
+   > 
+   <Box padding="15px" 
+   borderRadius="25px"
+    bg={ location.pathname===route.to ? "brand.500": "" }
+   >
+   <Text
+   fontWeight="500" 
+   color={location.pathname===route.to ? "white": "gray.400" }  
+   > {route.name}
+   </Text>
+   </Box>
+   </ChakraLink>
+  ))
+  }
+
+
+
+
+
 
     
    </Flex>

@@ -1,14 +1,17 @@
-import { Box, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box,Link as ChakraLink, Text } from '@chakra-ui/react'
+import { Link as ReactRouterLink} from "react-router-dom"; 
+
 
 const Logo = () => {
   return (
     <Box >
-    
-        <Text fontSize="2rem" fontWeight="bold" color="#47a9cc">  FGERM </Text>
-    
+      
+   <ChakraLink  as={ReactRouterLink}  to="/" _hover={{ textDecoration:"none" , }}>  
+        <Text fontSize="2rem" fontWeight="bold" fontFamily="MuseoModerno" color="#47a9cc" _hover={{ color:"black"}}>  FGERM </Text>
+    </ChakraLink>
     </Box>
+    
   )
 }
 
-export default Logo
+export default Logo; 

@@ -19,9 +19,37 @@ const config :ThemeConfig = {
 
 
 const colors = {
+  
+  brand: {
+    50: '#f5fafd',
+    100: '#dbebfd',
+    200: '#b3e1fa',
+    300: '#8ac7f7',
+    400: '',
+    500: '#47ABCC',
+    600: '',
+    700: '',
+    800: '',
+    900: '',
+  }, 
+
+  gray: {
+    50:"", 
+    100:"" ,
+    400:"#1D1B1B"
+
+  }, 
+  
+  
   light : {
     primary: '#f5b042',
     secondary: '#8c8c8c',
+
+   
+    
+
+
+
     }, 
     dark: {
         // Customize dark mode colors here
@@ -29,18 +57,8 @@ const colors = {
         secondary: 'red',
         bg: "red",
         // ...other colors
-    brand: {
-            50: '#f5fafd',
-            100: '#dbebfd',
-            200: '#b3e1fa',
-            300: '#8ac7f7',
-            400: '#62adf3',
-            500: '#4287f5',
-            600: '#3366d6',
-            700: '#2545aa',
-            800: '#172e7d',
-            900: '#09114f',
-          }, 
+
+      
     
     },
   }
@@ -51,9 +69,8 @@ const theme = extendTheme({
   config, 
   colors, 
   fonts: {
-    body: "'Open Sans', sans-serif",
-
-    heading: "'Open Sans', sans-serif",
+    body: "Open Sans, sans-serif",
+    heading: "MuseoModerno Variable, sans-serif",
     
   },
   fontWeights: {

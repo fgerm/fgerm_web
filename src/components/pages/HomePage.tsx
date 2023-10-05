@@ -1,131 +1,139 @@
-import { Flex, Box, Button, Image, Text,Heading, ChakraProvider, CardFooter, useDisclosure, Fade, VStack } from '@chakra-ui/react'
+import { Flex, Box, Button, Image, Text,Heading, VStack } from '@chakra-ui/react'
 import mainImage from "../../assets/images/homePage_main.webp"; 
-import React from 'react'
+
+
+
+
+
+
+
+
 
 const HomePage = () => {
 
+  
+const contentData= [ 
+  { id:1,
+  heading:"The Path to New Possibilities", 
+  text:`Welcome to a world where scientific rigor meets compassionate commitment,
+  where each discovery is a step forward in understanding the intricacies of life` },
 
+  { id:2, 
+    heading:"Advancements in Genome Engineering ",
+  text:`Welcome to a world where scientific rigor meets compassionate commitment,
+  where each discovery is a step forward in understanding the intricacies of life` },
+  
+  { id:3,
+  heading:"Revolutionizing Biomedical Models",
+  text:`Welcome to a world where scientific rigor meets compassionate commitment,
+  where each discovery is a step forward in understanding the intricacies of life` },
+]
 
 
   return (
-    //////// HomePage
-  <VStack  
-    outline="2px solid green"
-    
-    position="relative"
-    
-    
 
+    //////// HomePage
+  
+  <VStack  
+    position="relative"
     padding={{
     base:  "6rem 1.5rem", 
     sm: "6rem 1.5rem", 
-    md: "6rem 1rem" , 
-    lg: "6rem 3rem", 
-    xl:"6rem 8rem"
+    md: "5rem 1rem" , 
+    lg: "1rem 3rem", 
+    xl:"0rem 8rem"
     }}>  
 
-
   <Flex 
-
-  
+    
     h={{
       base:"inherit", 
-
+      lg: "80vh"
     }}
     w="100%"
-    //////////////////////////////////////////// bg="pink"
-    //  flexWrap="wrap"
 
-     direction= { {
-      base:"column-reverse", 
-      sm: "column-reverse", 
-      md:"column-reverse", 
-      lg:"row", 
-      xl:"row"
-     }}
+    direction={{
+    base:"column-reverse", 
+    sm: "column-reverse", 
+    md:"column-reverse", 
+    lg:"row", 
+    xl:"row"
+    }}
     
     
-    
-    // direction={{
-    //   base:"column-reverse", 
-    //   sm:"column-reverse",
-    //   md:"row-reverse",
-    //   lg:"row"
-    // }}
-
+  
     justifyContent={{
       base:"center",  
       sm: "center", 
-      md:"center", 
+      md: "center", 
       lg:"space-around"
+    }}
+    alignItems={{
+      base:"left",
+      sm:"center" ,
+      md:"center",
+      lg:"center"
+
 
     }}
-    alignItems="center"
     > 
   
-  {/**************************************************************  intro Text */}
-    <Box 
-    marginTop={{
-      base:"1.5rem", 
-      lg:"inherit"
 
+
+    <VStack 
+    bg="pink."
+    alignItems="left"
+    w={{
+      md:"80%",
+      lg:"100%",
+      xl:"100%"
     }}
-
-      w={{
-        base:"100%",
-        sm:"80%",
-        md:"80%", 
-        lg:"50%",
-        xl: "50%"
-      }} 
-   
+    
     >
       <Heading as='h1' 
-      size={ {
-        base:"3xl",
-        sm:"4xl",
-        md:"3xl", 
-        lg:"4xl", 
-        xl:"4xl" 
+
+
+      fontSize={{
+        base:"2rem",
+        sm:"3rem",
+        md:"4rem", 
+        lg:"4rem", 
+        xl:"5rem"
+
       }}
 
+      fontFamily="MuseoModerno"
       color="#47a9cc">Precision Genome Engineering</Heading>  
-      <Text 
-      marginTop="1.5rem"
-    
-      // w={{
-      //   base:"100%",
-      //   sm: "50ch",
-      //   md:"60ch",
-      //   lg:"45ch"
-      // }} 
-      > 
+      <Text w= {{
+        base:"20rem", 
+        sm:"20rem",
+        md:"24rem", 
+        lg:"26rem"}} > 
       Welcome to a world where scientific rigor meets compassionate commitment,
-      where each discovery is a step forward in understanding the intricacies of life</Text>
-      <Button>more</Button>
-      </Box>      
+      where each discovery is a step forward in understanding the intricacies of life...</Text>
+      <Button bg="brand.500" color="white" w="100px">more</Button>
+      </VStack>      
     
       <Box
      
-      outline="2px solid green"
-      w={{
-        base:"20rem",
-        sm:"25rem",
-        md:"30rem",
-        lg:"35rem"
-      }} 
-      aspectRatio="1/1" 
       
+      aspectRatio="1/1" 
+      w={{
+        base:"25rem", 
+        md:"30rem", 
+        lg:"50rem"}}
       borderRadius="50%"
       overflow="hidden"
       // background="url(https://pixabay.com/photos/biology-research-laboratory-science-220005/)"
       >
 
       <Image 
-      h="100%" 
+      maxW="100%"
       
-      src={mainImage} />
-      </Box>
+      
+      src={mainImage} alt="Microscope" />
+    
+    </Box>
   
     </Flex>
     
@@ -134,34 +142,61 @@ const HomePage = () => {
     
     
     
+    <Flex 
+   
+
+
+    marginY="3rem"
+      
     
-    <Flex
+    h= {{
+      base:"inherit" , 
+      sm:"inherit", 
+      lg:"80vh", 
+      
+    }}
    
-   
+
     position="relative"
 
+   
+
+  
+
+    direction= { {
+      base:"column-reverse", 
+      sm: "column-reverse", 
+      md:"column-reverse", 
+      lg:"row", 
+      xl:"row"
+     }}
     
-    direction={ {
-      base:"column-reverse",
-      sm:"column-reverse",
-      md:"row",
-      lg:"row"
-    }}
-
-    alignItems="center"
-    justifyContent="space-around"
-
-
+     
+  
     padding={{
       base:"5rem 0.5rem",
       sm:"5rem 0.5rem",
-      md: "3rem 1rem",
-      lg:"3rem 2rem"
+      md: "3rem 2rem",
+      lg:"3rem 2rem", 
+      xl: "2rem 1rem"
     }}
-
     >
 
-    <VStack 
+    <VStack
+    alignItems="left"
+    w={{
+      base:"100%" , 
+      sm:"70%", 
+      md:"80%", 
+      lg: "40%", 
+    
+
+    }}
+    // bg="blue.200"
+
+    marginRight="3.5rem"
+
+   
     marginTop={{
       base:"2.5rem", 
       sm:"2.5rem",
@@ -169,63 +204,61 @@ const HomePage = () => {
       lg:"inherit "
     }}
    
+    gap="6"> 
 
-    
-    
-    gap="10"> 
+{/* *************** List of Text Boxes  ****************** */}
+      
+     { contentData.map( (content) => ( 
+     
+     <Box key={content.id} 
+     w={{base:"90%",
+     md:"100%"
+     }}>
+      <Heading 
+      
+      size="lg" 
+      color="#47a9cc"
+      fontFamily="MuseoModerno"
+      > {content.heading}</Heading>
+      <Text 
+      fontSize={{
+        base:"1rem", 
+        sm:"inherit", 
+        lg:"inherit"
+      }}
+      w={{
+        base:"100%",
+        sm:"100%", 
+        md:"26rem",
+        lg:"26rem"
 
-    {/* List of Text Boxes  */}
-    <Box> 
-        <Heading size="lg" color="#47a9cc"> Heading 1</Heading>
-        <Text w={{
-          base:"100%", 
-          sm:"100%", 
-          md:"50%",
-          lg:"50%"
-        }}
-        >Welcome to a world where scientific 
-        rigor meets compassionate commitment,
-        where each discovery is a step forward in 
-        understanding the intricacies of life </Text>
-      </Box>
-      <Box> 
-        <Heading size="lg" color="#47a9cc"> Heading 2</Heading>
-        <Text w="50%">Welcome to a world where scientific 
-        rigor meets compassionate commitment,
-        where each discovery is a step forward in 
-        understanding the intricacies of life </Text>
-      </Box>
-      <Box> 
-        <Heading size="lg" color="#47a9cc"> Heading 3</Heading>
-        <Text w="50%">Welcome to a world where scientific 
-        rigor meets compassionate commitment,
-        where each discovery is a step forward in 
-        understanding the intricacies of life </Text>
-      </Box>
+      }}  > {content.text} </Text>
+
+      </Box>)
+     )}  
+{/* ***************End of  List of Text Boxes  ***************** */}
     </VStack>
     
     <Heading
-    
-    size={{
-      base:"2xl",
-      sm:"3xl", 
-      md:"2xl",
-      lg:"4xl"
-    }}
 
-   
-    lineHeight="1.3"
-    
-    alignSelf="flex-start"
-    w={{
-      base:"100%",
-      sm:"100%",
-      md:"50%", 
-      lg:"50%"
-    }}
+      w="100%"
+
+    fontSize={{
+  base:"3rem",
+  sm:"4rem",
+  md:"4rem", 
+  lg:"4.6rem", 
+  xl:"6rem"
+
+}}
+  
+
     textAlign="right"
+  
+    lineHeight="1.1"
     color="#47a9cc"
-    
+    alignSelf="start"
+    fontFamily="MuseoModerno"
     > 
     Unraveling <br/> The Complexities <br/>
     Of Human Infertility

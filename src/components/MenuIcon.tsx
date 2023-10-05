@@ -1,4 +1,4 @@
-import {Box,  Icon } from "@chakra-ui/react"
+import { Icon } from "@chakra-ui/react"
 import  {BiMenuAltRight} from "react-icons/bi"
 import { IoCloseOutline} from "react-icons/io5"; 
 

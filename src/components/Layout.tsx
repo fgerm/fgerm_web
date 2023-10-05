@@ -1,10 +1,9 @@
-import { Box, Stack } from "@chakra-ui/react"
-import NavBar from "./NavBar";
+import { Box } from "@chakra-ui/react"
+
 import Header from "./Header";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
+
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 
 const Layout = () => {
   return (
@@ -12,7 +11,10 @@ const Layout = () => {
   <>
   <Header />
 
-  <Box>
+  <Box
+  paddingTop={{base:"4rem",
+lg:"6rem"}}
+  >
 
   <Outlet />
 
@@ -24,6 +26,7 @@ const Layout = () => {
 
 
   </>
+  
   )
 }
 
