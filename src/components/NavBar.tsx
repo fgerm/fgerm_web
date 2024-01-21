@@ -33,7 +33,7 @@ const NavBar = ({visibility}: Props) => {
     }}
     
 
-    borderRadius="25px"
+    borderRadius="25px 0 0 25px"
 
     backdropFilter="blur(0.4rem)" 
 
