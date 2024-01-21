@@ -4,7 +4,7 @@ import mainImage from "../../assets/images/homePage_main.webp";
 
 
 
-
+  
 
 
 
@@ -19,7 +19,7 @@ const contentData= [
   where each discovery is a step forward in understanding the intricacies of life` },
 
   { id:2, 
-    heading:"Advancements in Genome Engineering ",
+  heading:"Advancements in Genome Engineering ",
   text:`Welcome to a world where scientific rigor meets compassionate commitment,
   where each discovery is a step forward in understanding the intricacies of life` },
   
@@ -34,24 +34,20 @@ const contentData= [
 
     //////// HomePage
   
-  <VStack  
-    position="relative"
-    padding={{
-    base:  "6rem 1.5rem", 
-    sm: "6rem 1.5rem", 
-    md: "5rem 1rem" , 
-    lg: "1rem 3rem", 
-    xl:"0rem 8rem"
-    }}>  
+  <VStack
+   padding= {{
+    base:"0rem 1rem"
+   }}
+  >
 
   <Flex 
     
     h={{
+      xl: '80vh',  
+      lg: "80vh", 
       base:"inherit", 
-      lg: "80vh"
     }}
-    w="100%"
-
+    
     direction={{
     base:"column-reverse", 
     sm: "column-reverse", 
@@ -62,30 +58,16 @@ const contentData= [
     
     
   gap={{
-    base: 10,   
-    lg:"inherit"
-
-
+    xl:"inherit", 
+    lg:"inherit",  
+    base: 3,   
+  
   }}
-    justifyContent={{
-      base:"center",  
-      sm: "center", 
-      md: "center", 
-      lg:"space-around"
-    }}
-    alignItems={{
-      base:"left",
-      sm:"center" ,
-      md:"center",
-      lg:"center"
-
-
-    }}
-    > 
+   > 
   
 
 
-    <VStack 
+  <VStack 
     bg="pink."
     alignItems="left"
     w={{
@@ -93,17 +75,16 @@ const contentData= [
       lg:"100%",
       xl:"100%"
     }}
-    
     >
-      <Heading as='h1' 
-
-
+    
+    <Heading as='h1' 
       fontSize={{
-        base:"2.5rem",
+        lg:"4rem", 
+        xl:"6rem", 
         sm:"3rem",
         md:"4rem", 
-        lg:"4rem", 
-        xl:"6rem"
+
+        base:"3rem",
 
       }}
 
@@ -117,27 +98,21 @@ const contentData= [
       Welcome to a world where scientific rigor meets compassionate commitment,
       where each discovery is a step forward in understanding the intricacies of life...</Text>
       <Button bg="brand.500" color="white" w="100px">more</Button>
-      </VStack>      
+    </VStack>      
     
-      <Box
-     
-      position="relative"
-      right="5%" 
-      aspectRatio="1/1" 
-      w={{
-        base:"25rem", 
-        md:"30rem", 
-        lg:"55rem"}}
-      borderRadius="50%"
+    <Box 
       overflow="hidden"
-      // background="url(https://pixabay.com/photos/biology-research-laboratory-science-220005/)"
+      borderRadius="50%"
+
+      boxSize={ {
+          xl:"50rem"
+
+        } }
+     
       >
 
-      <Image 
-      maxW="100%"
-      
-      
-      src={mainImage} alt="Microscope" />
+    <Image 
+       src={mainImage} alt="Microscope" />
     
     </Box>
   
@@ -147,24 +122,19 @@ const contentData= [
     {/* /////////////// section 2 ///////////////////*/}
     
     
-    
     <Flex 
+     
    
-
-
-    marginY="3rem"
-      
-    
     h= {{
-      base:"inherit" , 
-      sm:"inherit", 
-      lg:"80vh", 
-      
+
+    lg:"80vh", 
+    base:"inherit" , 
+    sm:"inherit",     
     }}
-   
 
     position="relative"
-
+    
+    margin="1rem 0rem"
    
 
   
@@ -179,13 +149,7 @@ const contentData= [
     
      
   
-    padding={{
-      base:"5rem 0.5rem",
-      sm:"5rem 0.5rem",
-      md: "3rem 2rem",
-      lg:"3rem 2rem", 
-      xl: "2rem 1rem"
-    }}
+   
     >
 
     <VStack
