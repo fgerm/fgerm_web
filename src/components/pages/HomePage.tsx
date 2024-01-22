@@ -36,12 +36,15 @@ const contentData= [
   
   <VStack
    padding= {{
+    xl:"0rem 4rem", 
+    lg: "0 4rem", 
+    md:"0 4rem",
     base:"0rem 1rem"
    }}
   >
 
   <Flex 
-    
+   bg="pink"
     h={{
       xl: '80vh',  
       lg: "80vh", 
@@ -56,11 +59,12 @@ const contentData= [
     xl:"row"
     }}
     
-    
+  alignItems="center"
   gap={{
     xl:"inherit", 
-    lg:"inherit",  
-    base: 3,   
+    lg:0,  
+    md:1,
+    base:3,   
   
   }}
    > 
@@ -70,31 +74,36 @@ const contentData= [
   <VStack 
     bg="pink."
     alignItems="left"
-    w={{
-      md:"80%",
-      lg:"100%",
-      xl:"100%"
-    }}
+
     >
     
     <Heading as='h1' 
       fontSize={{
+        xl:"5.5rem", 
         lg:"4rem", 
-        xl:"6rem", 
-        sm:"3rem",
         md:"4rem", 
-
+        sm:"4rem",
         base:"3rem",
 
       }}
 
       fontFamily="MuseoModerno"
-      color="#47a9cc">Precision Genome Engineering</Heading>  
-      <Text w= {{
-        base:"20rem", 
+      color="#47a9cc"
+      bg="green"
+      
+      
+      >Precision Genome Engineering</Heading>  
+      
+      <Text 
+      bg="coral"
+      w= {{
+       
+        lg:"26rem",
         sm:"20rem",
         md:"24rem", 
-        lg:"26rem"}} > 
+      
+        base:"20rem"
+        }} > 
       Welcome to a world where scientific rigor meets compassionate commitment,
       where each discovery is a step forward in understanding the intricacies of life...</Text>
       <Button bg="brand.500" color="white" w="100px">more</Button>
@@ -102,13 +111,32 @@ const contentData= [
     
     <Box 
       overflow="hidden"
-      borderRadius="50%"
+      bg="green"
+      borderRadius="25rem"
+      
+      w={{
+        xl:"45rem",
+        lg: "40rem",
+        md: "30rem",
+        sm: "30rem",
+        base: "25rem"
 
-      boxSize={ {
-          xl:"50rem"
 
-        } }
-     
+      }}
+
+      minW={{
+        xl:"40rem"
+      }}
+       
+      maxW={ {
+        xl:"55rem", 
+        lg:"45rem",
+        md:"35rem", 
+        sm:"30rem",
+        base:"20rem"
+       }}
+       
+ 
       >
 
     <Image 
@@ -118,6 +146,7 @@ const contentData= [
   
     </Flex>
     
+
 
     {/* /////////////// section 2 ///////////////////*/}
     
@@ -174,7 +203,9 @@ const contentData= [
       lg:"inherit "
     }}
    
-    gap="6"> 
+    gap="6"
+    
+    > 
 
 {/* *************** List of Text Boxes  ****************** */}
       

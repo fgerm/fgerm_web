@@ -26,14 +26,21 @@ const NavBar = ({visibility}: Props) => {
 
     alignItems="left"
     background= {{
-      base:"hsl(195 57% 54% /0.5)",
 
-      md:"hsl(195 57% 54% /0.1)"
+    base:"hsl(195 57% 54% /0.5)",
+     
+    md:"hsl(195 57% 54% /0.1)"
 
     }}
     
+    borderRadius={{
+      xl: "25px 25px 25px 25px",
+      lg: "25px 25px 25px 25px",
+      md: "25px 25px 25px 25px",
+      sm:"25px 0 0 25px", 
+      base: "25px 0 0 25px", 
 
-    borderRadius="25px 0 0 25px"
+    }}
 
     backdropFilter="blur(0.4rem)" 
 
@@ -46,14 +53,12 @@ const NavBar = ({visibility}: Props) => {
 
 
     transition=  "transform 350ms ease-out"
-
+ 
     position={{
       base:"fixed", 
       sm:"fixed",
       md:"relative", 
       lg:"relative" 
-
-
     }}
 
     inset= {{ 
@@ -92,7 +97,7 @@ const NavBar = ({visibility}: Props) => {
     lg:"center" }}
 
    
-
+    
 
 
   padding= {{

@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <HStack
-
+    
     boxSize="bordex-box"
     position="fixed"
     
@@ -27,7 +27,8 @@ const Header = () => {
       base:"1rem 2rem",
       sm: "1rem 2rem", 
       md:"1rem 2rem", 
-      lg:"1rem 10rem"
+      lg:"1rem 6rem",
+      xl: "1rem 8rem",
     }}
 
     > 
