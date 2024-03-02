@@ -36,7 +36,7 @@ const contentData= [
     xl:"0rem 4rem", 
     lg: "0 4rem", 
     md:"0 4rem",
-    base:"0rem 1rem"
+    base:"0rem 1.5rem"
    }}
   >
 
