@@ -13,7 +13,7 @@
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@fontsource-variable/museomoderno": "^5.0.15",
+    "@fontsource-variable/museomoderno": "^5.0.19",
     "@fontsource-variable/open-sans": "^5.0.9",
     "framer-motion": "^10.16.1",
     "react": "^18.2.0",

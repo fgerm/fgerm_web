@@ -25,8 +25,9 @@ const NavBar = ({visibility}: Props) => {
    <Flex 
 
     alignItems="left"
+    
+    
     background= {{
-
     base:"hsl(195 57% 54% /0.5)",
      
     md:"hsl(195 57% 54% /0.1)"

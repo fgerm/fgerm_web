@@ -4,9 +4,6 @@ import mainImage from "../../assets/images/homePage_main.webp";
 
 
 
-  
-
-
 
 
 const HomePage = () => {
@@ -44,7 +41,7 @@ const contentData= [
   >
 
   <Flex 
-   bg="pink"
+  
     h={{
       xl: '80vh',  
       lg: "80vh", 
@@ -72,7 +69,7 @@ const contentData= [
 
 
   <VStack 
-    bg="pink."
+  
     alignItems="left"
 
     >
@@ -87,15 +84,15 @@ const contentData= [
 
       }}
 
-      fontFamily="MuseoModerno"
+      fontFamily="heading"
       color="#47a9cc"
-      bg="green"
+    
       
       
       >Precision Genome Engineering</Heading>  
       
       <Text 
-      bg="coral"
+     
       w= {{
        
         lg:"26rem",

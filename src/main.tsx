@@ -5,6 +5,7 @@ import './index.css'
 import theme from './theme';
 import { RouterProvider } from 'react-router-dom';
 import router from './Routing/routes.tsx'
+import '@fontsource-variable/museomoderno';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

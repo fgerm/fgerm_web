@@ -1,14 +1,11 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react'
-
-
+import '@fontsource-variable/museomoderno';
 
 
 const config :ThemeConfig = {
 
   initialColorMode:'light',
   useSystemColorMode:false,
-
-
 
 }
 
@@ -70,7 +67,7 @@ const theme = extendTheme({
   colors, 
   fonts: {
     body: "Open Sans, sans-serif",
-    heading: "MuseoModerno Variable, sans-serif",
+    heading: `'MuseoModerno', sans-serif`, 
     
   },
   fontWeights: {
