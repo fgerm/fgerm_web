@@ -1,4 +1,4 @@
-import { Flex, Box, Button, Image, Text,Heading, VStack } from '@chakra-ui/react'
+import { Flex, Box, Button, Image, Text,Heading, VStack, HStack } from '@chakra-ui/react'
 import mainImage from "../../assets/images/homePage_main.webp"; 
 
 
@@ -12,18 +12,15 @@ const HomePage = () => {
 const contentData= [ 
   { id:1,
   heading:"The Path to New Possibilities", 
-  text:`Welcome to a world where scientific rigor meets compassionate commitment,
-  where each discovery is a step forward in understanding the intricacies of life` },
+  text:` Our primary research initiative focuses on deriving human oocytes from induced pluripotent stem cells (iPSCs). This advanced research area is at the forefront of reproductive biology, representing a significant leap in our understanding of human reproductive development.` },
 
   { id:2, 
   heading:"Advancements in Genome Engineering ",
-  text:`Welcome to a world where scientific rigor meets compassionate commitment,
-  where each discovery is a step forward in understanding the intricacies of life` },
+  text:`The ability to derive human oocytes from iPSCs also presents an invaluable tool for genetic research, particularly in understanding hereditary diseases and reproductive disorders. It allows us to study the effects of specific genetic mutations on oocyte development and early embryogenesis`},
   
   { id:3,
   heading:"Revolutionizing Biomedical Models",
-  text:`Welcome to a world where scientific rigor meets compassionate commitment,
-  where each discovery is a step forward in understanding the intricacies of life` },
+  text:`Our work provides a unique platform for modeling human development and diseases in vitro, offering insights into complex genetic and epigenetic mechanisms that drive early human development` },
 ]
 
 
@@ -34,14 +31,15 @@ const contentData= [
   <VStack
    padding= {{
     xl:"0rem 4rem", 
-    lg: "0 4rem", 
-    md:"0 4rem",
-    base:"0rem 1.5rem"
+    lg: "0 3rem", 
+    md:"0 2rem",
+    sm:"0 2rem",
+    base:"0 1rem"
    }}
+  
   >
 
   <Flex 
-  
     h={{
       xl: '80vh',  
       lg: "80vh", 
@@ -57,82 +55,62 @@ const contentData= [
     }}
     
   alignItems="center"
-  gap={{
-    xl:"inherit", 
-    lg:0,  
-    md:1,
-    base:3,   
-  
-  }}
+ 
    > 
   
 
 
   <VStack 
-  
+    
     alignItems="left"
-
+    
+    
     >
     
     <Heading as='h1' 
+    
       fontSize={{
-        xl:"5.5rem", 
-        lg:"4rem", 
+        xl:"5rem",
+        lg:"3.5rem", 
         md:"4rem", 
-        sm:"4rem",
-        base:"3rem",
-
+        sm:"3rem", 
+        base:"3rem"
       }}
-
+         
       fontFamily="heading"
       color="#47a9cc"
-    
-      
+     
       
       >Precision Genome Engineering</Heading>  
       
       <Text 
      
       w= {{
+        xl:"65ch",
+        lg:"50ch",
+        md:"50ch", 
+        sm:"45ch",
+        base:"35ch"
+        }} 
+        > Welcome to FGERM, the forefront of innovative research in human germ cell development from pluripotent stem cells. Our journey began in 2020, in partnership with NovoHelix, aiming to revolutionize reproductive medicine. We're dedicated to unlocking the mysteries of human development and offering new solutions for infertility.</Text> 
        
-        lg:"26rem",
-        sm:"20rem",
-        md:"24rem", 
-      
-        base:"20rem"
-        }} > 
-      Welcome to a world where scientific rigor meets compassionate commitment,
-      where each discovery is a step forward in understanding the intricacies of life...</Text>
+        
       <Button bg="brand.500" color="white" w="100px">more</Button>
     </VStack>      
     
     <Box 
       overflow="hidden"
-      bg="green"
+    
       borderRadius="25rem"
       
       w={{
         xl:"45rem",
-        lg: "40rem",
-        md: "30rem",
-        sm: "30rem",
-        base: "25rem"
-
-
+        lg: "32rem",
+        md: "35rem",
+        sm: "25rem",
+        base: "20rem"
       }}
 
-      minW={{
-        xl:"40rem"
-      }}
-       
-      maxW={ {
-        xl:"55rem", 
-        lg:"45rem",
-        md:"35rem", 
-        sm:"30rem",
-        base:"20rem"
-       }}
-       
  
       >
 
