@@ -1,6 +1,7 @@
-import { Flex, Box, Button, Image, Text,Heading, VStack, HStack } from '@chakra-ui/react'
+import { Flex, Box, Button, Image, Text,Heading, VStack, Link as ChakraLink } from '@chakra-ui/react'
 import mainImage from "../../assets/images/homePage_main.webp"; 
 
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 
 
@@ -94,8 +95,10 @@ const contentData= [
         }} 
         > Welcome to FGERM, the forefront of innovative research in human germ cell development from pluripotent stem cells. Our journey began in 2020, in partnership with NovoHelix, aiming to revolutionize reproductive medicine. We're dedicated to unlocking the mysteries of human development and offering new solutions for infertility.</Text> 
        
-        
+        <ChakraLink as={ReactRouterLink} to="/about"> 
       <Button bg="brand.500" color="white" w="100px">more</Button>
+
+      </ChakraLink>
     </VStack>      
     
     <Box 
@@ -166,7 +169,7 @@ const contentData= [
     
 
     }}
-    // bg="blue.200"
+   
 
     marginRight="3.5rem"
 
