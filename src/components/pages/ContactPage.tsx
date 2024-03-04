@@ -7,8 +7,8 @@ const ContactPage = () => {
     <Flex>  
       <Box>   
       <Heading size="4xl">Let's Chat</Heading>
-      <ChakraLink href="mailto:fgerm@gmail.com"> 
-      <Text fontSize={"2.5rem"}>fgerm@gmail.com</Text>
+      <ChakraLink href="mailto:bischoff@fgerm.org"> 
+      <Text fontSize={"2.5rem"}>bischoff@fgerm.org</Text>
       </ChakraLink>
       </Box>
 
