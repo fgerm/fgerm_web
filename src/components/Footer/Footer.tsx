@@ -67,7 +67,6 @@ const Footer = () => {
    boxSize={5} 
    marginLeft="5px"
    _hover= {{ color:"#76D7EA"}}
-   
    /> ) )}  
    
    </HStack>
@@ -77,7 +76,7 @@ const Footer = () => {
 
 
     <Center position="absolute"  bottom="6px"> 
-    <Text  color="white">© 2023 FGERM. All Rights Reserved. | Privacy Policy | Terms of Use </Text>
+    <Text  color="white">© 2024 FGERM. All Rights Reserved. | Privacy Policy | Terms of Use </Text>
     </Center>
 
     </VStack>
