@@ -57,7 +57,7 @@ const Footer = () => {
   <VStack alignItems={{
     base:"start",
     sm:"end"
-  }}><Text color="white"> NovoHelix | Miami, FL | Kent, OH</Text>
+  }}><Text color="white"> Miami, FL | Kent, OH</Text>
    
    <HStack  marginTop="1rem"> {socialLinks.map((platform) =>  ( 
    <Icon key={platform.id} 
